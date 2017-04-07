@@ -1,0 +1,12 @@
+{
+  "name": "accordion",
+  "description": "HGT portals",
+  "authors": [
+    "Donny"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-animate": "^1.6.4"
+  }
+}

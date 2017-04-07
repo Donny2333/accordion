@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="accordion-app">
+<head>
+	<title>accordion</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body ng-controller="AppCtrl">
+	<div>Angular手风琴效果：</div>	
+	<!--css tricks, do not change it-->
+	<ul id="list" class="list">
+		<li class="item" ng-click="click($index)" ng-repeat-start="item in vm.list">
+			{{item.id}}
+		</li><li ng-if="$index % 4 == 3" ng-show="vm.open[($index+1)/4-1]" class='discription' ng-repeat-end>
+		You have choosed: {{vm.select.id}}
+	</li>
+	<!--css tricks, do not change it-->
+</ul>
+</body>
+</html>
